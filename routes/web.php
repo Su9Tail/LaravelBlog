@@ -11,11 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::group(['domain' => 'www.blog.app', 'namespace' => 'Web'], function () {
+    Route::get('post', 'PostController@index');
+    Route::get('post/{id}', 'PostController@show');
 });
 
-Route::group(['domain' => 'www.blog.app','namespace'=>'Web'], function () {
-    Route::get('post','PostController@index');
-    Route::get('post/{id}','PostController@show');
+Route::group(['domain' => 'admin.blog.app', 'namespace' => 'Admin'], function () {
+    Route::get('login', 'AuthenticateController@login');
+    Route::post('login', 'AuthenticateController@authenticate');
+    Route::get('logout', 'AuthenticateController@logout');
+
+    Route::get('/','AdminController@index');
+
+    Route::resource('post','PostController');
 });
