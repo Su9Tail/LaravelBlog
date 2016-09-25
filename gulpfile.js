@@ -24,5 +24,6 @@ elixir(mix => {
         .copy('bower_components/jquery/dist/jquery.js','public/vendor/jquery/')
         .copy('bower_components/clean-blog/css/clean-blog.css','public/vendor/clean-blog/')
         .copy('bower_components/clean-blog/js/clean-blog.js','public/vendor/clean-blog/')
-        .copy('bower_components/font-awesome/css/font-awesome.css','public/vendor/font-awesome/');
+        .copy('bower_components/font-awesome/css/font-awesome.css','public/vendor/font-awesome/css/')
+        .copy('bower_components/font-awesome/fonts/','public/vendor/font-awesome/fonts/');
 });

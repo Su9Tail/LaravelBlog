@@ -18,7 +18,7 @@
     <link href="{{asset('vendor/clean-blog/clean-blog.css')}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{asset('vendor/font-awesome/fontawesome.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('vendor/font-awesome/css/font-awesome.css')}}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,7 +86,7 @@
                         <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
                                 </span>
                         </a>
                     </li>
@@ -94,7 +94,7 @@
                         <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
                                 </span>
                         </a>
                     </li>
@@ -107,7 +107,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                <p class="copyright text-muted">Copyright &copy; Cals</p>
             </div>
         </div>
     </div>
