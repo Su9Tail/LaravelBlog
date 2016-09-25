@@ -21,11 +21,10 @@
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Username" name="username" type="text"
-                                           autofocus>
+                                           value="{{old('username')}}" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password"
-                                           value="">
+                                    <input class="form-control" placeholder="Password" name="password" type="password">
                                 </div>
                                 {!! csrf_field() !!}
                                 <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
@@ -33,6 +32,8 @@
                         </form>
                     </div>
                 </div>
+                @include("errors.errors")
+                @include("vendor.session.status")
             </div>
         </div>
     </div>
