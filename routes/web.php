@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['domain' => 'www.blog.app','namespace'=>'Web'], function () {
+    Route::get('post','PostController@index');
+    Route::get('post/{id}','PostController@show');
+});
