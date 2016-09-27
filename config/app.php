@@ -179,7 +179,14 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
-         * Custom
+         * RSP Service Providers...
+         */
+        App\Providers\RepositoryServiceProvider::class,
+        App\Providers\ServiceServiceProvider::class,
+        App\Providers\PresenterServiceProvider::class,
+
+        /*
+         * Custom Service Providers...
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
