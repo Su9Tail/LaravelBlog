@@ -29,8 +29,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        dd($this->service->indexOfWeb());
-        $posts = Post::orderBy('created_at', 'desc')->simplePaginate(10);
+        $posts = $this->service->indexOfWeb();
         return view('web.post.index', ['posts' => $posts]);
     }
 

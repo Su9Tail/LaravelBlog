@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
-    protected $defer = true;
+//    protected $defer = true;
 
     /**
      * Bootstrap the application services.
@@ -25,11 +25,11 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('App\Repositories\Interfaces\PostRepositoyInterface', 'App\Repositories\Implementations\PostRepository');
+        $this->app->bind('App\Repositories\Interfaces\PostRepositoryInterface', 'App\Repositories\Implementations\PostRepository');
     }
 
-    public function provides()
-    {
-        return ['App\Repositories\Interfaces\PostRepositoyInterface'];
-    }
+//    public function provides()
+//    {
+//        return ['App\Repositories\Interfaces\PostRepositoryInterface'];
+//    }
 }

@@ -19,10 +19,8 @@ class PostRepository extends Repository implements PostRepositoryInterface
         return 'App\Models\Post';
     }
 
-    public function simplePaginate($columns = array('*'))
+    public function simplePaginate($perPage = 15, $columns = array('*'))
     {
-        return $this->model->simplePaginate($columns);
+        return $this->model->simplePaginate($perPage, $columns);
     }
-
-
 }

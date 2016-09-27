@@ -11,5 +11,5 @@ namespace App\Repositories\Interfaces;
 
 interface PostRepositoryInterface
 {
-    public function simplePaginate($columns = array('*'));
+    public function simplePaginate($perPage = 15, $columns = array('*'));
 }
