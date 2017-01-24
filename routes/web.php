@@ -16,6 +16,7 @@
 //});
 
 Route::group(['domain' => 'www.blog.app', 'namespace' => 'Web'], function () {
+    Route::get('/', 'WebController@index');
     Route::get('post', 'PostController@index');
     Route::get('post/{id}', 'PostController@show');
 });
@@ -25,9 +26,9 @@ Route::group(['domain' => 'admin.blog.app', 'namespace' => 'Admin'], function ()
     Route::post('login', 'AuthenticateController@authenticate');
     Route::get('logout', 'AuthenticateController@logout');
 
-    Route::group(['middleware'=>'auth'],function (){
-        Route::get('/','AdminController@index');
+    Route::group(['middleware' => 'auth'], function () {
+        Route::get('/', 'AdminController@index');
 
-        Route::resource('post','PostController');
+        Route::resource('post', 'PostController');
     });
 });
